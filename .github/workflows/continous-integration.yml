@@ -9,7 +9,6 @@ on:
   pull_request:
 
 # SECRETS
-# - COVERALLS_REPO_TOKEN: can be found on the coveralls page for the repo
 # - GH_RELEASE_NOTES_TOKEN: personal access token of `rasabot` github account
 #                           (login for account in 1pw)
 # - SLACK_WEBHOOK_TOKEN: token to post to RasaHQ slack account (in 1password)
