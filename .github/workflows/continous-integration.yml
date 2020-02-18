@@ -136,10 +136,9 @@ jobs:
 
     - name: Send Coverage Report 📊
       if: matrix.python-version == 3.6
-      env:
-        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
-        COVERALLS_SERVICE_NAME: github-ci
-      run: coveralls
+      uses: coverallsapp/github-action@v1.0.1
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
 
   deploy:
     name: Deploy to PyPI
